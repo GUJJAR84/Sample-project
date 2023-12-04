@@ -1,0 +1,172 @@
+* {
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ECDAC2;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#navbar {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color:rgb(246, 237, 224);
+  box-shadow: 2px 2px 8px black;
+  position: sticky;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  line-height: 20px;
+}
+.logo img {
+  height: 100px;
+  padding: 9px 10px;
+}
+.logo img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  line-height: 120px;
+  margin: 0;
+}
+.nav li {
+  list-style: none;
+  line-height: 120px;
+}
+.nav li a {
+  margin: auto;
+  padding: 2px 50px;
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-size: 2em;
+  font-family: monospace;
+}
+.nav li a:hover {
+  transform: scale(1.5);
+  transition: 1s;
+}
+/* body */
+#body {
+  display: grid;
+  grid-template-columns: 74% 10%;
+}
+.heading {
+  font-size: 7em;
+  text-shadow: 8px 10px 14px #000000;
+  font-family: monospace;
+  display: flex;
+  margin: 0px;
+}
+.upper {
+  display: flex;
+  align-items: right;
+}
+.upper p {
+  font-size: 2em;
+  margin: 65px 0px;
+  width: 60%;
+}
+/* button */
+.button {
+  display: flex;
+  justify-content: center;
+}
+.Download {
+  box-shadow: 2px 2px 8px #04aa6d;
+  background-color: #04aa6d;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3em;
+  margin: 10px;
+  border-radius: 30px;
+}
+.button button:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+/*middle */
+.heading2 {
+  font-size: 3em;
+  font-family: fantasy;
+}
+.middle p {
+  font-size: 1em;
+  font-style: italic;
+  width: 32%;
+}
+/* SIde image */
+.side-img:hover {
+  transition: 1s linear;
+}
+/* Lower */
+.collage {
+  position: relative;
+  border: 2px solid;
+  background-color: black;
+  height: 87vh;
+  width: 55vw;
+  overflow: hidden;
+  margin: 0 332px;
+}
+.collage .item {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+}
+#img1 {
+  top: 0;
+  left: 0;
+}
+#img2  {
+  top: 0;
+  right: 0;
+}
+#img3 {
+    left: 6px;
+    top: 41vh;
+}
+#img4 {
+    right: 24px;
+    top: 37vh;
+}
+#img5 {
+  position: absolute;
+  top: 36%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+#img1 img{
+    height: 96%;
+    width: 95%;
+}
+#img2 img{
+    height: 110%;
+    width: 98%;
+}
+#img3 img{
+    height: 91%;
+    width: 89%;
+}
+#img4 img{
+    height: 110%;
+    width: 105%;
+}
+#img5 img{
+    height: 38%;
+    width: 139%;
+}
